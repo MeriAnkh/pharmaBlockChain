@@ -1,0 +1,23 @@
+<div class="comments-row">
+  <fieldset>
+    <input type="text" placeholder="Laissez un commentaire…" [formControl]="commentCtrl">
+  </fieldset>
+  <button mat-icon-button style="color: rgb(64, 138, 235);" (click)="onLeaveComment()">
+    <mat-icon>send</mat-icon>
+  </button>
+
+</div>
+  
+<div class="comments">
+  <h2>Commentaires</h2>
+  <div class="comment">
+    <span class="comment-containt"> Bonjour Dr, Merci Beaucoup pour vos conseils</span>
+    <span class="date-of-post" >11 mars 2023</span>
+  </div>
+
+  <div class="comment">
+    <span class="comment-containt"> Dr, Est-ce qu'il est possible de conserver les géllules une fois quils sont hors de l'emballage ?</span>
+    <span class="date-of-post" >11 mars 2023</span>
+  </div>
+
+</div>

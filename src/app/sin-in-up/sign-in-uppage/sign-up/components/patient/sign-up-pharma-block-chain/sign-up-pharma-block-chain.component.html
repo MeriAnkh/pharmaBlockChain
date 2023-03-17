@@ -1,0 +1,150 @@
+<form class="hide-remove gen-form with-messages signup" [formGroup]="signUpPatientForm">
+
+    <div class="title-form">
+        <h3>Informations du patient</h3>
+    </div>
+
+    <div class="img-profile-camera" > 
+        <img [src]="urlimageprofile">
+        <div class="user_img_profile">
+            <input class="file-input" type="file" name="user[file]" id="user_file" (change)="getImagePreview($event)">
+             <label for="user_img_profile"><mat-icon>photo_camera</mat-icon></label>
+        </div>
+    </div>
+
+        <!-- contactsform -->
+
+    <div class="form-group">
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="firstName">
+                <label for="firstName">Nom</label>
+                <input autocomplete="name" class="text-input" type="text" formControlName="firstName" id="user_firstName">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="lastName">
+                <label for="lastName">Prenom</label>
+                <input autocapitalize="off"   class="text-input" type="text" formControlName="lastName" id="user_lastName">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_birth_date">
+                <label for="user_birth_date">Date de naissance</label>
+                <input class="date-input" type="date" formControlName="birthDate" id="birthDate">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="nationality">
+                <label for="nationality">Nationalité</label>
+                <select formControlName="nationality" id="cntry-select">
+                    <option selected value=""></option>
+                    <option value="Cameroun">Cameroun</option>
+                    <option value="Congo">Congo</option>
+                </select>
+            </fieldset>
+        </div>
+    </div>
+    
+    <fieldset class="field-gender">
+        <legend>Genre</legend>
+        <div class="form-field-group gender">
+            <div class="form-field">
+                <fieldset class="user_sexe">
+                    <label for="user_female">Femme</label>
+                    <input class="text-input" type="radio" value= "Femme"  formControlName="sexe" id="user-sexe-2" checked>
+                </fieldset>
+            </div>
+
+            <div class="form-field">
+                <fieldset class="user_sexe">
+                    <label for="user_male">Homme</label>
+                    <input class="text-input" type="radio" value = "Homme" formControlName="sexe" id="user-sexe-1">
+                </fieldset>
+            </div>
+        </div>
+    </fieldset>
+
+    </div>
+
+        <!-- contactsform -->
+
+    <div class="form-group">
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_email">
+                <label for="user_email">Email</label>
+                <input class="text-input" type="email" formControlName="email" id="useremail">
+            </fieldset>
+        </div>
+
+        <div class="form-field">
+            <fieldset class="user_phone">
+                <label for="user_phone">Telephone</label>
+                <input class="text-input" type="tel" formControlName="telephone" id="userphone">
+            </fieldset>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    <!-- logininfos -->
+
+    <div class="form-group">
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_password">
+                <label for="user_password">Mot de passe</label>
+                <input class="text-input" placeholder="min 6caractères" type="password" formControlName="password" id="user-password">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_password">
+                <label for="user_password">Confirmer le mot de passe</label>
+                <input class="text-input" placeholder="min 6caractères" type="password" formControlName="confirmPassword" id="user-confirm-password">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_name">
+                <label for="user_name"> Nom d'utilisateur </label>
+                <input class="text-input" placeholder="Patient" type="text" formControlName="username" id="usernameid">
+            </fieldset>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="form-field">
+        <fieldset class="check-wrap opt-in">
+            <input type="checkbox" value="user_agree_to_terms" id="user_agree_to_terms" formControlName="chexcondition">
+            <label for="user_agree_to_terms">
+                En créant ce compte cela sinifie que j'approuve sans reserves <a href="#">La politique de confidentialité</a>, <a href="#">Les differents services</a> et par defaut <a href="#">Les notifications de parametres.</a> 
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="form-btns">
+        <input type="button" value="Annuler"  class="button form-reset" (click)="onReset(signUpPatientForm)">
+        <input type="button" value="Creer un compte"  class="button form-sub" (click)="onSubmitForm(signUpPatientForm)">
+    </div>
+ 
+    <p class="recaptcha-terms">
+        Ce site est protégé par les services google. Toute fois la <a href="#">la politique de confidentialité</a> relative à vos données reste applicable.
+    </p>
+</form>
+
+
+  
+    

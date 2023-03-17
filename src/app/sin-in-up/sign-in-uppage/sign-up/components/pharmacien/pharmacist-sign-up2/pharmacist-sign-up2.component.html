@@ -1,0 +1,73 @@
+<form class="hide-remove gen-form with-messages signup" id="new_user">
+    <div class="title-form">
+        <h3>Informations professionelles du Pharmacien</h3>
+    </div>
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_name">
+                <label for="user_name">Numéro d'imatriculation CMC</label>
+                <input autocomplete="off" class="text-input" type="text" name="user[name]" id="user_name">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_birth_date">
+                <label for="user_birth_date">Date de début de carrière</label>
+                <input class="date-input" type="date" name="user[date]" id="user_birth_date">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="form-field">
+        <fieldset class="user_speciality">
+            <label for="user_speciality">Spécialité</label>
+            <select name="countries" id="cntry-select">
+                <option selected value=""></option>
+                <option value="officine">phamacien d'officine</option>
+                <option value="hospitalier">phamacien hospitalier</option>
+                <option value="biologiste">phamacien biologiste</option>
+                <option value="industriel">phamacien industriel</option>
+                <option value="inspecteur_santé">phamacien inspecteur de santé publique</option>
+                <option value="conseil">phamacien conseil</option>
+
+            </select>
+        </fieldset>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_file">
+                <div class="file_name">
+                    <label for="file_user_authentification">Certificat d'étude :</label>
+                    <p></p>
+                </div>
+                <div class="input-file">
+                    <mat-icon>upload-file</mat-icon><h4>Inserer un fichier</h4> 
+                    <input class="file-input" type="file" name="user[file]" id="user_file">
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_file">
+                <div class="file_name">
+                    <label for="file_user_authentification">Autorisation d'exercice du pharmacien :</label> 
+                    <p></p>
+                </div>
+                <div class="input-file">
+                    <mat-icon>upload-file</mat-icon> 
+                    <h4>Inserer un fichier</h4>
+                    <input class="file-input" type="file" name="user[file]" id="user_file">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    
+    <div class="form-btns">
+        <input type="button" value="Créer un compte" class="button form-sub" data-disable-with="Create Account">
+    </div>
+
+    <p class="recaptcha-terms">
+        Ce site est protégé par les services google. Toute fois la <a href="#">la politique de confidentialité</a> relative à vos données reste applicable.
+    </p>
+</form>
+
+

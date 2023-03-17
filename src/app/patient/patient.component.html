@@ -1,0 +1,113 @@
+<div class="container">
+    <section class="dashbord-sidebar">
+        <header class="navbar-header">
+            <div class="logo">
+                <img src="../assets/images/logophama.png" alt="logo">
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="item">
+                <div class="menu" (click) = "home()">
+                    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>home</mat-icon>
+                        <p>Acceuil</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="menu item2" (click) = "command()">
+                    <a routerLink="commands-patient" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>shopping_card</mat-icon>
+                        <p>FaIre une commande</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="menu item3" (click) = "drugs()">
+                    <a routerLink="medicines-patients" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>medication</mat-icon>
+                        <p>médicaments</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="menu item4" (click) = "suggestion()">
+                    <a routerLink="health-suggestions" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>ballot</mat-icon>
+                        <p>Conseils santés</p>
+                    </a>  
+                </div>
+            </div>
+
+            <div class="item" (click) = "history()">
+                <div class="menu item5">
+                    <a routerLink="historique-patient" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>history</mat-icon>
+                        <p>Mon historique</p>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="item" (click) = "chat()">
+                <div class="menu item6">
+                    <a routerLink="social-health-media" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon>chat</mat-icon>
+                        <p>Voir un pharmacien</p>
+                    </a> 
+                </div>
+            </div>
+        </nav>
+
+        <footer class="footer-navbar nav-content">
+            <div class="img-profile">
+                <mat-icon class="profile">person</mat-icon>
+            </div>
+            <div class="Username">
+                <p>Bonjour EKOH !</p>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <section class="dashbord-containt">
+            <div class="main-container">
+                <div class="header-container">
+                    <div class="title">
+                        <div class="author-name">
+                            <p class="author-name-title">PharmaBlockChain</p>
+                        </div>
+                        <p class="title-fonctionality">{{fonctionality}}</p>
+                    </div>
+                
+                    <div class="authers">
+                        <div class="form-field">
+                                <label for="user_email"><mat-icon>search</mat-icon></label>
+                                <input class="text-input" placeholder="Rechercher produit" type="text" name="user[research]" id="user_reseach">
+                        </div>
+                        <div class="parameters">
+                            <mat-icon>settings</mat-icon>
+                        </div>
+                        <div class="notification">
+                            <mat-icon>notifications</mat-icon>
+                        </div>
+                        <div class="img-profile">
+                            <mat-icon>person</mat-icon>
+                        </div>
+                        <div class="username-profile">
+                            <p>Salut Ekoh !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-container">
+
+                    <router-outlet></router-outlet>
+
+                </div>
+            </div>
+    </section>
+</div>

@@ -1,0 +1,47 @@
+.Auth-nav{
+    align-self: flex-start;
+    color: rgb(64, 138, 235);
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10%;
+
+    a{ 
+        text-decoration: none;
+    }
+}
+
+
+
+main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .Auth-content{
+        width: 50%;
+        height: 100%;
+        padding: 0 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+        h2{
+            color: rgb(64, 138, 235);
+            font-size: 1.6rem;
+            letter-spacing: 4px;
+            font-weight: 500;
+        }
+
+
+
+    }
+}

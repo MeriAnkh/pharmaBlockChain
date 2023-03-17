@@ -1,0 +1,99 @@
+           form{
+                margin-left: 5%;
+                background-color: #fff;
+                box-shadow:  5px 5px 20px 0px lightgray;
+                border-radius: 10px;
+                padding: 3%;
+                width: 90%;
+                height: 100%;
+                color: rgb(86, 157, 250);
+                
+                
+                
+                fieldset{
+                    padding: 2% 0;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .check-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    input{
+                        margin-right: 2%;
+                    }
+                }
+    
+                .form-field{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 0;
+
+                    label{
+                        padding: 1% 0;
+                    }
+                    .user_sexe{
+                        flex-direction: row;
+                        label{
+                            padding: 1% 10%;
+                        }
+                    }
+
+                    input[type = text], [type = email], [type = date], [type = password], [type = tel]{
+                        border: solid 0.5px rgb(86, 157, 250);
+                        border-radius: 4px;
+                        height: 25px;   
+                        
+                    }
+
+                    input:focus{
+                        border: none;
+                    }
+
+                    .password-label{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        a{
+                            text-decoration: none;
+                            color: rgb(86, 157, 250);
+                            font-weight: 350;
+                        }
+                    }
+                }
+
+                .field-gender{
+                    padding: 0 0;
+                    margin: 2% 0;
+
+                }
+
+                .form-btns {
+                    display: flex;
+                    justify-content: center;
+                    padding: 5% 0;
+
+                    input[type = button] {
+                        background-color: rgb(86, 157, 250);
+                        color: #fff;
+                        box-sizing: border-box;
+                        padding: 5px 10px;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: lightgray 3px 3px 7px;
+                        margin-right: 20px;
+                        outline: none;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        &:active {
+                            transform: translate(1px, 1px);
+                            box-shadow: lightgray 0 0 5px;
+                        }
+                    }
+                }
+
+            }

@@ -1,0 +1,14 @@
+
+<nav class="Auth-nav">
+    <p>Vous disposez déja d'un compte ? <a routerLink='../signIn/actors' [queryParams]={actor}>Se Connecter </a></p>
+</nav>
+
+<main>
+    <div class="Auth-content">
+        <h2>Inscription</h2> 
+        <!-- <hr class="divider"> -->
+        <div class="Auth-form Signinup-form">
+            <router-outlet></router-outlet>        
+        </div>
+    </div>
+</main>

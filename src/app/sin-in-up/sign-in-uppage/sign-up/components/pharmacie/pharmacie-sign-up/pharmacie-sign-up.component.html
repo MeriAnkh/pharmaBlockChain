@@ -1,0 +1,85 @@
+<form class="hide-remove gen-form with-messages signup" id="new_user">
+    <div class="title-form">
+        <h3>Informations personnelles de la Pharmacie</h3>
+    </div>
+    
+    <div class="img-profile-camera" > 
+        <img src="../assets/images/kisspng-computer-icons-question-mark-clip-art-profile-picture-icon-5b49de29407583.077843511531567657264-removebg-preview.png" >
+        <div class="user_img_profile">
+            
+            <input class="file-input" type="file" name="user[file]" id="user_file">
+            <label for="user_img_profile"><mat-icon>photo_camera</mat-icon></label>
+        </div>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_name">
+                <label for="user_name">Nom Pharmacie</label>
+                <input autocomplete="off" class="text-input" type="text" name="user[name]" id="user_name">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="last-name">
+                <label for="last-name">Adresse</label>
+                <input autocapitalize="off" autocorrect="off" autocomplete="user_login" class="text-input" type="text" name="user[login]" id="user_login">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_email">
+                <label for="user_email">Email</label>
+                <input class="text-input" type="email" name="user[email]" id="user_email">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_phone">
+                <label for="user_email">Telephone</label>
+                <input class="text-input" type="tel" name="user[phone]" id="user_phone">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="user_password">
+                <label for="user_password">Mot de passe</label>
+                <input class="text-input" placeholder="6+ characters" type="password" name="user[password]" id="user_password">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_password">
+                <label for="user_password">Confirmer le mot de passe</label>
+                <input class="text-input" placeholder="6+ characters" type="password" name="user[password]" id="user_password">
+            </fieldset>
+        </div>
+    </div>
+    <div class="form-field-group">
+        <div class="form-field">
+            <fieldset class="town">
+                <label for="town">Ville</label>
+                <input class="Ville-input" type="text" name="Pharmacie[town]" id="Pharmacie-town">
+            </fieldset>
+        </div>
+        <div class="form-field">
+            <fieldset class="user_nationality">
+                <label for="user_nationality">Pays</label>
+                <select name="countries" id="cntry-select">
+                    <option selected value=""></option>
+                    <option value="Cameroun">Cameroun</option>
+                    <option value="Congo">Congo</option>
+                </select>
+            </fieldset>
+        </div>
+    </div>
+    
+    <div class="form-btns">
+        <button type="submit"><a routerLink="../actors3/step2" [queryParams]="{actor : 'pharmacie'}">Suivant</a></button>
+    </div>
+
+    <p class="recaptcha-terms">
+        Ce site est protégé par les services google. Toute fois la <a href="#">la politique de confidentialité</a> relative à vos données reste applicable.
+    </p>
+</form>

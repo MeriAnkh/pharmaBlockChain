@@ -1,0 +1,299 @@
+
+.body-container{
+    margin-top: 8%;
+    display: flex;
+    padding: 0 2%;
+    box-sizing: border-box;
+    
+
+    width: 100%;
+    height: 90%;
+
+    .body-contain-1{
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1% 0;
+       
+        width: 70%;
+        height: 100%;
+
+        .drugs{
+            
+            display: flex;
+            background-color: #FFF;
+            box-sizing: border-box;
+            box-shadow:  5px 5px 20px 0px lightgray;
+            border-radius: 10px;
+            align-items: center;
+            padding: 2%;
+            justify-content: space-between;
+            width: 100%;
+            height: 70%;
+
+            .img-drug{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    align-self: flex-end;
+                }
+                
+                
+                img {
+                    width: 100%;
+                    height: 50%;
+                }
+
+            }
+
+            .drugs-news{
+                
+                width: 60%;
+                height: 100%;
+                margin-top: 0;
+
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .main-pharmacie{
+                    display: flex;
+                    align-items: center; 
+                    margin: 5px 0;
+
+                    img{
+                        align-self: baseline;
+                        width: 15%;
+                        height: 100%;
+                    }
+
+                    h3{
+                        padding-left: 3%;
+                        font-size: 1.5rem;
+                        color: rgba(123, 125, 128, 0.9);
+                    }
+
+                }
+
+                .name-drus{
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+
+                    .Cathegory{
+                        margin: 0 3px;
+                        font-size: 1rem;
+                        color: rgb(64, 138, 235, 0.8);
+                        letter-spacing: 3px;
+
+                    }
+                    
+                    
+                    .list-reducted-news{
+                        padding:0;
+                        display: flex;
+                        list-style: none;
+                        justify-content: space-between;
+                        width: 70%;
+
+                        .production-date, .Expiration-date, .state-disponibility{
+                            
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 80px;
+                            height: 25px;
+                            border-radius: 5px;
+                            font-weight: 500;
+
+                        }
+
+                        .production-date{
+                            color: rgb(1, 145, 1);
+                            background-color: rgba(0, 128, 0, 0.2);
+                        }
+
+                        .Expiration-date{
+                            color: red;
+                            background-color: rgba(255, 0, 0, 0.2);
+                        }
+
+                        .state-disponibility{
+                            color: rgb(255, 187, 0);
+                            background-color: rgba(255, 220, 0, 0.2);
+
+                        }
+                    }
+
+                    .name{
+                        color: rgba(46, 46, 48);
+                        letter-spacing: 1.5px;
+                        padding: 1% 0;
+                        font-size: 2.5rem;
+                        margin: 0;
+                    }
+
+                    
+                }
+                .descrip-recommandations-drugs{
+                    box-sizing: border-box;
+                    justify-content: space-between;
+                    display: flex;
+
+                    
+
+                    .description, .drugs-recommandations-effects{
+                        color: rgb(122, 122, 122);
+                        line-height: 25px;
+                        font-size: 0.9rem;
+                        color: rgb(64, 138, 235);
+
+                    }
+
+                    .description{
+                        width: 50%;
+                    }
+
+                    .drugs-recommandations-effects{
+                        width: 40%;
+
+                    }
+
+                    .list-deaseas{
+                        list-style: disc;
+                        
+
+                    }
+                }
+                .command-button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    width: 90%;
+
+                    
+
+                    p{
+                        color: rgb(0, 180, 0);
+                    }
+
+                }                                
+                    
+            }
+
+        }
+
+        .unboxing-drugs{
+            
+            display: flex;
+            justify-content: space-between;
+            box-sizing: content-box;
+            flex-direction: column;
+            padding: 0 2%;
+            height: 25%;
+            background-color: #FFF;
+            box-shadow:  5px 5px 20px 0px lightgray;
+            border-radius: 10px;
+            
+            
+
+            .uboxing-drugs-title{
+                width: 15%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 2rem;
+                
+                
+                mat-icon{
+                    font-size: 2.8rem;
+                    padding-right: 50px;
+                    padding-bottom: 50px;
+                    
+
+                }
+                
+                
+
+
+            }
+
+           
+
+            
+            
+            .img-drug-list{
+                height: 55%;
+                width: 100%;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                margin-top: 0;
+                box-sizing: border-box;
+                
+                
+
+                p{
+                    
+                    color: rgb(64, 138, 235);
+                    font-weight: 550;
+                    letter-spacing: 2px;
+                }
+
+                li{
+                    padding: 0;
+                }
+
+                img{
+                    width: 100%;
+                    height: 65%;
+                    
+                    
+                }
+            }
+        }
+    }
+
+    .body-contain-2{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        
+       
+        width: 25%;
+        padding: 0% 3%;
+        height: 85%;
+        justify-content: space-between;
+        margin-left: 55%;
+
+        .second-effects, .Chimical-containts, .upload-ordonance{
+            padding: 2% 4%;
+            background-color: rgb(64, 138, 235);
+            box-shadow:  5px 5px 20px 0px lightgray;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            color: #fff;
+           
+        }
+
+        // .Chimical-containts{
+        
+
+        // }
+
+        .upload-ordonance{
+            padding: 5% 4%;
+        }
+
+    }
+}
+

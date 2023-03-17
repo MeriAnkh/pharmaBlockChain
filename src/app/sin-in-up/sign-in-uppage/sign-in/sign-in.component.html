@@ -1,0 +1,26 @@
+<div class="container">
+
+    <nav class="Auth-nav">
+        <p *ngIf="nameActor === 'patient'">Vous ne disposez pas déja de compte ? <a routerLink= "../signUp/actors1" [queryParams]="{actor : 'patient'}"> S'inscrire </a></p>
+        <p *ngIf="nameActor === 'Pharmacien'">Vous ne disposez pas déja de compte ? <a routerLink= "../signUp/actors2" [queryParams]="{actor : 'Pharmacien'}"> S'inscrire </a></p>
+        <p *ngIf="nameActor === 'Pharmacie'">Vous ne disposez pas déja de compte ? <a routerLink= "../signUp/actors3" [queryParams]="{actor : 'Pharmacie'}"> S'inscrire </a></p>
+    </nav>
+
+    <main>
+        <div class="Auth-content">
+
+            <h2>Connexion</h2>
+
+            <!-- <hr class="divider"> -->
+
+            <div class="Auth-form Signinup-form">
+
+                <router-outlet></router-outlet>     
+                
+            </div>
+
+        </div>
+    </main>
+
+</div>
+    
